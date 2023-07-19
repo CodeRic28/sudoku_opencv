@@ -13,11 +13,6 @@ img = cv2.resize(img, (widthImg,heightImg)) #RESIZE IMAGE TO MAKE IT SQAURE
 imgBlank = np.zeros((heightImg,widthImg,3), np.uint8) # CREATE A BLANK IMAGE FOR TESTING, DEBUGGING
 imgThreshold = preProcess(img)
 
-# cv2.imshow("Image", img)
-# cv2.waitKey(0)
-
-
-
 imageArray = ([img,imgBlank,imgBlank,imgBlank],
               [imgBlank,imgBlank,imgBlank,imgBlank])
 stackedImage = stackImages(imageArray,1)
